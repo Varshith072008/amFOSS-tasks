@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        body {
+            background-color: #B6EBE7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 400px;
+            height: 300px;
+            background-color: #B6EBE7;
+            position: relative;
+        }
+        .main-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            width: 300px;
+            height: 150px;
+            place-items: center;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: #724FAF;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .rectangle1 {
+            width: 110px;
+            height: 30px;
+            background-color: #724FAF;
+            position: relative;
+            right: 50px;
+        }
+       .rectangle2 {
+            width: 110px;
+            height: 30px;
+            background-color: #724FAF;
+            position: relative;
+            left: 110px;
+            top: -10px;
+       }
+       .rectangle3 {
+            width: 110px;
+            height: 30px;
+            background-color: #724FAF;
+            position: relative;
+            left: -50px;
+            bottom: -40px;
+       }
+        .line {
+            background-color: #724FAF;
+            position: absolute;
+            z-index: 0;
+        }
+        .vertical-line {
+            width: 10px;
+            height: 110px;
+            left: 95px; 
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .horizontal-line-middle {
+            width: 50px;
+            height: 10px;
+            left: 100px;
+            top: 145px;
+        }
+        .horizontal-line-bottom {
+            width: 50px;
+            height: 10px;
+            left: 100px;
+            bottom: 95px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="square"></div>
+            <div class="rectangle1"></div>
+            <div class="rectangle2"></div>
+            <div class="rectangle3"></div>
+        </div>
+        <div class="line vertical-line"></div>
+        <div class="line horizontal-line-middle"></div>
+        <div class="line horizontal-line-bottom"></div>
+    </div>
+</body>
+</html>
